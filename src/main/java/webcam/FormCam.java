@@ -24,5 +24,3 @@ import org.opencv.videoio.VideoCapture;
 import org.opencv.objdetect.CascadeClassifier;
 
 public class FormCAM extends javax.swing.JFrame {
-
-
