@@ -47,4 +47,6 @@ public class FormCAM extends javax.swing.JFrame {
                                     }
                                     Imgcodecs.imencode(".bmp",frame, frameB);
                                     Image im = ImageIO.read(new ByteArrayInputStream(frameB.toArray()));
+                                    BufferedImage buff = (BufferedImage) im;
+                                    if (g.drawImage(buff, 0, 0, getWidth(), getHeight(), 0, 0, buff.getWidth(), buff.getHeight(),null)){
 
