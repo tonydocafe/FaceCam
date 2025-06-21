@@ -190,6 +190,9 @@ public class FormCAM extends javax.swing.JFrame {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
+
+            java.awt.EventQueue.invokeLater(() -> new FormCAM().setVisible(true));
+    }
             }
         } catch (Exception ex) {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
