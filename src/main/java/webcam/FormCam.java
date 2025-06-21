@@ -32,4 +32,6 @@ public class FormCAM extends javax.swing.JFrame {
     CascadeClassifier faceDetector = new CascadeClassifier(xmlPath);
     class DaemonThread implements Runnable {
         volatile boolean runnable = false;
-
+        @Override
+               public void run (){
+        
