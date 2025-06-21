@@ -28,4 +28,5 @@ public class FormCAM extends javax.swing.JFrame {
     VideoCapture video = null;
     MatOfByte frameB = new MatOfByte();
     MatOfRect faceDetections = new MatOfRect(); 
+    String xmlPath = FormCAM.class.getResource("/haarcascade_frontalface_default.xml").getPath();
 
