@@ -45,4 +45,6 @@ public class FormCAM extends javax.swing.JFrame {
                                     for(Rect rect : faceDetections.toArray()){
                                         Imgproc.rectangle(frame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0,255,0), 3);
                                     }
+                                    Imgcodecs.imencode(".bmp",frame, frameB);
+                                    Image im = ImageIO.read(new ByteArrayInputStream(frameB.toArray()));
 
