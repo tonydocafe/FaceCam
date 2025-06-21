@@ -31,4 +31,5 @@ public class FormCAM extends javax.swing.JFrame {
     String xmlPath = FormCAM.class.getResource("/haarcascade_frontalface_default.xml").getPath();
     CascadeClassifier faceDetector = new CascadeClassifier(xmlPath);
     class DaemonThread implements Runnable {
+        volatile boolean runnable = false;
 
