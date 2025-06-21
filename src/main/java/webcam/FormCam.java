@@ -42,4 +42,6 @@ public class FormCAM extends javax.swing.JFrame {
                                     Graphics g = panelcam.getGraphics();
                                     faceDetector.detectMultiScale(frame, faceDetections, 1.3, 3, 0, new Size(30,30));
                                     for(Rect rect : faceDetections.toArray()){
+                                    Imgproc.rectangle(frame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0,255,0), 3);
+
 
