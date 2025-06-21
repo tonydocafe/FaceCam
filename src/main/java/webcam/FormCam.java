@@ -38,5 +38,6 @@ public class FormCAM extends javax.swing.JFrame {
                         while(runnable){
                             if(video.grab()){
                                 try{
+                                    video.retrieve(frame);
                                     Graphics g = panelcam.getGraphics();
 
