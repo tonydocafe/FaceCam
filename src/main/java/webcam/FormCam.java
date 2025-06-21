@@ -35,4 +35,7 @@ public class FormCAM extends javax.swing.JFrame {
         @Override
                public void run (){
                     synchronized(this){
+                        while(runnable){
+                            if(video.grab()){
+                                try{
 
