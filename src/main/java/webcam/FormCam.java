@@ -71,9 +71,6 @@ public class FormCAM extends javax.swing.JFrame {
                         }
         
         
-        
                     }
                 }
-                
-            
             }
