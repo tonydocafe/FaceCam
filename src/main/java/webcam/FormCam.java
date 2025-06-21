@@ -184,3 +184,13 @@ public class FormCAM extends javax.swing.JFrame {
     }                                       
    public static void main(String args[]) throws Exception {
         System.load("/home/perolanegra/opencv/build/lib/natives/libopencv_java451.so");
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (Exception ex) {
+            logger.log(java.util.logging.Level.SEVERE, null, ex);
+        }
