@@ -24,6 +24,7 @@ import org.opencv.videoio.VideoCapture;
 import org.opencv.objdetect.CascadeClassifier;
 
 public class FormCAM extends javax.swing.JFrame {
+    
     private DaemonThread myThread = null;
     VideoCapture video = null;
     MatOfByte frameB = new MatOfByte();
