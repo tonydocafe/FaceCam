@@ -172,3 +172,13 @@ public class FormCAM extends javax.swing.JFrame {
         btnstop.setEnabled(true);
           // TODO add your handling code here:
     }  
+
+
+    private void btnstopActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        myThread.runnable = false;           
+        
+        btnplay.setEnabled(true);
+        btnstop.setEnabled(false);
+        
+        video.release();
+    }                                       
