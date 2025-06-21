@@ -84,3 +84,91 @@ public class FormCAM extends javax.swing.JFrame {
     public FormCAM() {
         initComponents();
     }
+
+
+                                                                                               @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        panelnav = new javax.swing.JPanel();
+        btnplay = new javax.swing.JButton();
+        btnstop = new javax.swing.JButton();
+        panelcam = new javax.swing.JPanel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+
+        panelnav.setBackground(new java.awt.Color(255, 0, 0));
+        panelnav.setPreferredSize(new java.awt.Dimension(221, 100));
+
+        btnplay.setText("iniciar");
+        btnplay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnplayActionPerformed(evt);
+            }
+        });
+
+        btnstop.setText("parar");
+
+        javax.swing.GroupLayout panelnavLayout = new javax.swing.GroupLayout(panelnav);
+        panelnav.setLayout(panelnavLayout);
+        panelnavLayout.setHorizontalGroup(
+            panelnavLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelnavLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(btnplay)
+                .addGap(39, 39, 39)
+                .addComponent(btnstop)
+                .addContainerGap(519, Short.MAX_VALUE))
+        );
+        panelnavLayout.setVerticalGroup(
+            panelnavLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelnavLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelnavLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnstop)
+                    .addComponent(btnplay))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout panelcamLayout = new javax.swing.GroupLayout(panelcam);
+        panelcam.setLayout(panelcamLayout);
+        panelcamLayout.setHorizontalGroup(
+            panelcamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panelcamLayout.setVerticalGroup(
+            panelcamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 582, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelnav, javax.swing.GroupLayout.DEFAULT_SIZE, 724, Short.MAX_VALUE)
+            .addComponent(panelcam, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelnav, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panelcam, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pack();
+        setLocationRelativeTo(null);
+    }// </editor-fold>                        
+
+    private void btnplayActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        video = new VideoCapture(0);
+        myThread = new DaemonThread();
+        Thread t = new Thread(myThread);
+        t.setDaemon(true);
+        myThread.runnable = true;
+        t.start();
+        btnplay.setEnabled(false);
+        btnstop.setEnabled(true);
+          // TODO add your handling code here:
+    }  
