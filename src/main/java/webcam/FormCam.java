@@ -197,3 +197,10 @@ public class FormCAM extends javax.swing.JFrame {
         } catch (Exception ex) {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
+    private javax.swing.JButton btnplay;
+    private javax.swing.JButton btnstop;
+    private javax.swing.JPanel panelcam;
+    private javax.swing.JPanel panelnav;
+    // End of variables declaration                   
+}
+
