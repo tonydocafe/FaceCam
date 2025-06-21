@@ -49,4 +49,10 @@ public class FormCAM extends javax.swing.JFrame {
                                     Image im = ImageIO.read(new ByteArrayInputStream(frameB.toArray()));
                                     BufferedImage buff = (BufferedImage) im;
                                     if (g.drawImage(buff, 0, 0, getWidth(), getHeight(), 0, 0, buff.getWidth(), buff.getHeight(),null)){
-
+                                       if(runnable == false){
+                                           System.out.println("Pausando...");
+                                           this.wait();
+                                       } 
+                                    
+                                    }
+                        
