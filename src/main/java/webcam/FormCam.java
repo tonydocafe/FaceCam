@@ -34,4 +34,5 @@ public class FormCAM extends javax.swing.JFrame {
         volatile boolean runnable = false;
         @Override
                public void run (){
-        
+                    synchronized(this){
+
