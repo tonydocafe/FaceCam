@@ -182,3 +182,4 @@ public class FormCAM extends javax.swing.JFrame {
         
         video.release();
     }                                       
+   public static void main(String args[]) throws Exception {
