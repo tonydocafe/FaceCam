@@ -26,13 +26,19 @@ import org.opencv.objdetect.CascadeClassifier;
 public class FormCAM extends javax.swing.JFrame {
     
     private DaemonThread myThread = null;
+    
     VideoCapture video = null;
+    
     MatOfByte frameB = new MatOfByte();
+    
     MatOfRect faceDetections = new MatOfRect(); 
+    
     String xmlPath = FormCAM.class.getResource("/haarcascade_frontalface_default.xml").getPath();
+    
     CascadeClassifier faceDetector = new CascadeClassifier(xmlPath);
    
     class DaemonThread implements Runnable {
+        
         volatile boolean runnable = false;
         @Override
                public void run (){
