@@ -60,20 +60,20 @@ public class FormCAM extends javax.swing.JFrame {
                             
                                     System.out.println("Erro!");
                         
-                        }catch(InterruptedException ex){
+                                }catch(InterruptedException ex){
+                                    
+                                    Logger.getLogger(FormCAM.class.getName()).log(Level.SEVERE, null, ex);
+                                
+                                }
                             
-                            Logger.getLogger(FormCAM.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                         
                         }
-                    
-                    }
-                
-                }
-
-
-
-            }
-        }
         
-    
-    }
+        
+        
+                    }
+                }
+                
+            
+            }
