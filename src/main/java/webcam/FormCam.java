@@ -56,7 +56,7 @@ public class FormCAM extends javax.swing.JFrame {
                                     
                                     }
                         
-                        }catch(IOException ex){
+                                }catch(IOException ex){
                             
                         System.out.println("Erro!");
                         
