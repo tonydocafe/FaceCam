@@ -27,4 +27,5 @@ public class FormCAM extends javax.swing.JFrame {
     private DaemonThread myThread = null;
     VideoCapture video = null;
     MatOfByte frameB = new MatOfByte();
+    MatOfRect faceDetections = new MatOfRect(); 
 
