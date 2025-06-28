@@ -45,4 +45,5 @@
                     <mainClass>webcam.FormCAM</mainClass>
                     <systemProperties>
                         <systemProperty>
+                            <key>java.library.path</key>
 
