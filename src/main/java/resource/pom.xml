@@ -43,4 +43,5 @@
                 <version>3.1.0</version>
                 <configuration>
                     <mainClass>webcam.FormCAM</mainClass>
+                    <systemProperties>
 
