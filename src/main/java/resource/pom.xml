@@ -18,4 +18,5 @@
     <dependencies>
         <dependency>
             <groupId>org.opencv</groupId>
+            <artifactId>opencv</artifactId>
 
