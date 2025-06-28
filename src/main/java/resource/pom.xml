@@ -50,4 +50,5 @@
                         </systemProperty>
                     </systemProperties>
                 </configuration>
+            </plugin>
 
