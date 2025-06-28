@@ -20,4 +20,5 @@
             <groupId>org.opencv</groupId>
             <artifactId>opencv</artifactId>
               <version>4.5.1-2</version>
+        </dependency>
 
