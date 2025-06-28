@@ -36,4 +36,5 @@
                 <configuration>
                     <release>21</release>
                 </configuration>
+            </plugin>
 
