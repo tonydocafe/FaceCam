@@ -48,4 +48,5 @@
                             <key>java.library.path</key>
                             <value>/home/perolanegra/opencv/build/lib</value>
                         </systemProperty>
+                    </systemProperties>
 
