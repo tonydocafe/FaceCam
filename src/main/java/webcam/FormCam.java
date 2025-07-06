@@ -84,6 +84,7 @@ public class FormCAM extends javax.swing.JFrame {
     public FormCAM() {
         initComponents();
                private DaemonThread myThread = null;
+                VideoCapture video = null;
 
     }
 
