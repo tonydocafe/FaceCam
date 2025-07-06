@@ -86,6 +86,8 @@ public class FormCAM extends javax.swing.JFrame {
                private DaemonThread myThread = null;
                 VideoCapture video = null;
                 MatOfByte frameB = new MatOfByte();
+                String xmlPath = FormCAM.class.getResource("/haarcascade_frontalface_default.xml").getPath();
+                CascadeClassifier faceDetector = new CascadeClassifier(xmlPath);
 
 
     }
