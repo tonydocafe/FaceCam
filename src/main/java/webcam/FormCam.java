@@ -293,7 +293,9 @@ public class FormCAM extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>                        
 
-
+    private void btnacessActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+    } 
 
     private void btnstopActionPerformed(java.awt.event.ActionEvent evt) {                                        
         myThread.runnable = false;           
